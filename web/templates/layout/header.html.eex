@@ -1,0 +1,8 @@
+<header class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div>
+      <a class="title" href="<%= page_path(@conn, :index) %>">Overture</a>
+    </div> <!-- container -->
+  </div> <!-- navbar-inner -->
+  <a href="<%= book_path(@conn, :new) %>">本の登録</a>
+</header>
