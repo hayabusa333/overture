@@ -2,15 +2,15 @@
   <table class="table">
   <thead>
     <tr>
-      <th>Title</th>
       <th>URL IMAGE</th>
+      <th>Title</th>
     </tr>
   </thead>
   <tbody>
 <%= for book <- @books do %>
     <tr>
+      <td><img src="<%= book.image_url %>" alt="" width="" height="" border="0" /></td>
       <td><%= book.title %></td>
-      <td><%= book.image_url %></td>
 
       <td class="text-right">
         <%= link "Show", to: book_path(@conn, :show, book), class: "btn btn-default btn-xs" %>
