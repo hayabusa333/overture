@@ -5,6 +5,8 @@ defmodule Overture.Book do
     field :title, :string
     field :image_url, :string
     field :read_end_date, Ecto.Date
+    field :user_id, :integer
+    field :user_name, :string
 
     timestamps()
   end
